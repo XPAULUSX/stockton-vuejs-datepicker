@@ -12,7 +12,7 @@
         :class="{'disabled': isLeftNavDisabled}"
       >&lt;</span> -->
 
-      <a class="btn btn--secondary btn--inline btn--icon prev" :class="{'disabled': isLeftNavDisabled}" href="#" role="button" @click="isRtl ? nextMonth() : previousMonth()"><svg class="icon"><use xlink:href=""></use></svg></a>
+      <a class="btn btn--secondary btn--inline btn--icon prev" :class="{'btn--disabled': isLeftNavDisabled}" href="#" role="button" @click="isRtl ? nextMonth() : previousMonth()"><svg class="icon"><use xlink:href=""></use></svg></a>
    
       <div class="select-container date-select">
         <select class="select-container__input datepicker-month-select" id="datepicker-month-select" @change="selectDropdownMonthChanged($event.target.selectedIndex)">
@@ -31,7 +31,7 @@
         class="next"
         :class="{'disabled': isRightNavDisabled}"
       >&gt;</span> -->
-      <a class="btn btn--secondary btn--inline btn--icon next" :class="{'disabled': isRightNavDisabled}" href="#" role="button" @click="isRtl ? previousMonth() : nextMonth()"><svg class="icon"><use xlink:href=""></use></svg></a>
+      <a class="btn btn--secondary btn--inline btn--icon next" :class="{'btn--disabled': isRightNavDisabled}" href="#" role="button" @click="isRtl ? previousMonth() : nextMonth()"><svg class="icon"><use xlink:href=""></use></svg></a>
 
     </header>
     <div class="picker-days" :class="isRtl ? 'flex-rtl' : ''">
