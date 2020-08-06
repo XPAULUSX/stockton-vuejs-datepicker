@@ -63,7 +63,7 @@
     "eslint-friendly-formatter": "^2.0.7",
     "eslint-plugin-html": "^2.0.0",
     "eslint-plugin-promise": "^3.4.0",
-    "eslint-plugin-standard": "^2.0.1",
+    "eslint-plugin-standard": "^4.0.1",
     "eventsource-polyfill": "^0.9.6",
     "jest": "^24.8.0",
     "jest-serializer-vue": "^2.0.2",
